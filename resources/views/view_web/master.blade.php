@@ -54,9 +54,9 @@
 </head>
 <body>
 	<div class="main-content">
-		@include('layout.header')
+		@include('view_web.layout.header')
 		@yield('content')
-		@include('layout.footer')
+		@include('view_web.layout.footer')
 	</div>
 	<script src="{{ asset('js/vendor/jquery.min.js') }}"></script>
 	<script src="{{ asset('js/vendor/jquery-migrate.min.js') }}"></script>

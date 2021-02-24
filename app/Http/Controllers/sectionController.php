@@ -7,49 +7,49 @@ use Illuminate\Http\Request;
 class sectionController extends Controller
 {
     public function getIndex(){
-    	return view('index');
+    	return view('view_web/index');
     }
     public function getContact(){
-    	return view('contact');
+    	return view('view_web/contact');
     }
     public function getAboutUs(){
-    	return view('about-us');
+    	return view('view_web/about-us');
     }
     public function getPostLayout(){
-    	return view('post-layout-five');
+    	return view('view_web/post-layout-five');
     }
     public function getPostFormat(){
-    	return view('post-format');
+    	return view('view_web/post-format');
     }
     public function getAuthor(){
-    	return view('author');
+    	return view('view_web/author');
     }
     public function getBusiness(){
-    	return view('business');
+    	return view('view_web/business');
     }
     public function getLifeStyle(){
-    	return view('lifestyle');
+    	return view('view_web/lifestyle');
     }
     public function getTechnology(){
-    	return view('technology');
+    	return view('view_web/technology');
     }
      public function getSports(){
-    	return view('sports');
+    	return view('view_web/sports');
     }
      public function getTeam(){
-    	return view('team');
+    	return view('view_web/team');
     }
     public function getPostFormatStandard(){
-    	return view('post-format-standard');
+    	return view('view_web/post-format-standard');
     }
      public function getPostFormatVideo(){
-    	return view('post-format-video');
+    	return view('view_web/post-format-video');
     }
      public function getError(){
-    	return view('errors.404');
+    	return view('view_web/errors.404');
     }
      public function getConstruction(){
-    	return view('under-construction');
+    	return view('view_web/under-construction');
     }
     
 }
