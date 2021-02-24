@@ -1,4 +1,4 @@
-@extends('master')
+@extends('view_web.master')
 @section('titlePage', 'Home')
 @section('link')
 @stop
