@@ -1,4 +1,4 @@
-@extends('master')
+@extends('view_web.master')
 @section('titlePage','Team')
 @section('content')
 		<div class="breadcrumb-wrapper">
@@ -43,7 +43,7 @@
 						<div class="col-lg-4">
 							<div class="axil-team-block m-b-xs-30">
 								<a href="{{ URL::route('author') }}" class="d-block img-container">
-									<img src="{{ asset('images/team/team-1.jpg') }}" alt="team member 1">
+									<img src="{{ asset('styleWeb/images/team/team-1.jpg') }}" alt="team member 1">
 								</a>
 
 								<div class="axil-team-inner-content text-center">
@@ -73,7 +73,7 @@
 						<div class="col-lg-4">
 							<div class="axil-team-block m-b-xs-30">
 								<a href="{{ URL::route('author') }}" class="d-block img-container">
-									<img src="{{ asset('images/team/team-2.jpg') }}" alt="team member 2">
+									<img src="{{ asset('styleWeb/images/team/team-2.jpg') }}" alt="team member 2">
 								</a>
 
 								<div class="axil-team-inner-content text-center">
@@ -103,7 +103,7 @@
 						<div class="col-lg-4">
 							<div class="axil-team-block m-b-xs-30">
 								<a href="{{ URL::route('author') }}" class="d-block img-container">
-									<img src="{{ asset('images/team/team-3.jpg') }}" alt="team member 3">
+									<img src="{{ asset('styleWeb/images/team/team-3.jpg') }}" alt="team member 3">
 								</a>
 
 								<div class="axil-team-inner-content text-center">
@@ -133,7 +133,7 @@
 						<div class="col-lg-4">
 							<div class="axil-team-block m-b-xs-30">
 								<a href="{{ URL::route('author') }}" class="d-block img-container">
-									<img src="{{ asset('images/team/team-4.jpg') }}" alt="team member 4">
+									<img src="{{ asset('styleWeb/images/team/team-4.jpg') }}" alt="team member 4">
 								</a>
 
 								<div class="axil-team-inner-content text-center">
@@ -163,7 +163,7 @@
 						<div class="col-lg-4">
 							<div class="axil-team-block m-b-xs-30">
 								<a href="{{ URL::route('author') }}" class="d-block img-container">
-									<img src="{{ asset('images/team/team-5.jpg') }}" alt="team member 5">
+									<img src="{{ asset('styleWeb/images/team/team-5.jpg') }}" alt="team member 5">
 								</a>
 
 								<div class="axil-team-inner-content text-center">
@@ -193,7 +193,7 @@
 						<div class="col-lg-4">
 							<div class="axil-team-block m-b-xs-30">
 								<a href="{{ URL::route('author') }}" class="d-block img-container">
-									<img src="{{ asset('images/team/team-6.jpg') }}" alt="team member 6">
+									<img src="{{ asset('styleWeb/images/team/team-6.jpg') }}" alt="team member 6">
 								</a>
 
 								<div class="axil-team-inner-content text-center">

@@ -123,7 +123,7 @@
 						<div class="col-md">
 							<div class="footer-logo-container">
 								<a href="{{ route('index') }}">
-									<img src="{{ asset('images/logo-symbol.svg') }}" alt="footer logo" class="footer-logo">
+									<img src="{{ asset('styleWeb/images/logo-symbol.svg') }}" alt="footer logo" class="footer-logo">
 								</a>
 							</div>
 							<!-- End of .brand-logo-container -->

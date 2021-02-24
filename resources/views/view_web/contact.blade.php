@@ -1,4 +1,4 @@
-@extends('master')
+@extends('view_web.master')
 @section('titlePage', 'Contact')
 @section('content')
 	<div class="breadcrumb-wrapper">
@@ -42,7 +42,7 @@
 			</div>
 
 			<figure class="m-b-xs-30 p-t-xs-10">
-				<img src="{{ asset('images/contact-banner.jpg')}}" alt="contact banner" class="img-fluid mx-auto">
+				<img src="{{ asset('styleWeb/images/contact-banner.jpg')}}" alt="contact banner" class="img-fluid mx-auto">
 			</figure>
 		</div>
 		<!-- End of .container -->

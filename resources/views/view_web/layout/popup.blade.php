@@ -6,7 +6,7 @@
 		<div class="row no-gutters">
 			<div class="col-lg-6">
 				<div class="img-container">
-					<img src="{{ asset('images/subscribe-popup-img.jpg') }}" alt="subscribe img">
+					<img src="{{ asset('styleWeb/images/subscribe-popup-img.jpg') }}" alt="subscribe img">
 				</div>
 			</div>
 			<!-- End of .col-lg-6 -->

@@ -1,4 +1,4 @@
-@extends('master')
+@extends('view_web.master')
 @section('titlePage', 'About-Us')
 @section('content')
 	<div class="breadcrumb-wrapper">
@@ -36,7 +36,7 @@
 		<div class="container">
 
 			<figure class="m-b-xs-40">
-				<img src="{{ asset('images/about-us.jpg') }}" alt="about us" class="img-fluid mx-auto">
+				<img src="{{ asset('styleWeb/images/about-us.jpg') }}" alt="about us" class="img-fluid mx-auto">
 			</figure>
 
 			<div class="row">
@@ -200,7 +200,7 @@
 									<div class="axil-content">
 										<div class="media post-block post-block__small">
 											<a href="post-format-standard.html" class="align-self-center"><img
-													class=" m-r-xs-30" src="{{ asset('images/media/small-media-1.jpg') }}"
+													class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-1.jpg') }}"
 													alt="media image"></a>
 											<div class="media-body">
 												<div class="post-cat-group">
@@ -225,7 +225,7 @@
 										<!-- End of .post-block -->
 										<div class="media post-block post-block__small">
 											<a href="post-format-standard.html" class="align-self-center"><img
-													class=" m-r-xs-30" src="{{ asset('images/media/small-media-2.jpg') }}"
+													class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-2.jpg') }}"
 													alt="media image"></a>
 											<div class="media-body">
 												<a href="post-format-standard.html"
@@ -246,7 +246,7 @@
 										<!-- End of .post-block -->
 										<div class="media post-block post-block__small">
 											<a href="post-format-standard.html" class="align-self-center"><img
-													class=" m-r-xs-30" src="{{ asset('images/media/small-media-3.jpg') }}"
+													class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-3.jpg') }}"
 													alt="media image"></a>
 											<div class="media-body">
 												<a href="post-format-standard.html"
@@ -264,7 +264,7 @@
 										<!-- End of .post-block -->
 										<div class="media post-block post-block__small">
 											<a href="post-format-standard.html" class="align-self-center"><img
-													class=" m-r-xs-30" src="{{ asset('images/media/small-media-4.jpg') }}"
+													class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-4.jpg') }}"
 													alt="media image"></a>
 											<div class="media-body">
 												<a href="post-format-standard.html"
@@ -289,7 +289,7 @@
 									<div class="axil-content">
 										<div class="media post-block post-block__small">
 											<a href="post-format-standard.html" class="align-self-center"><img
-													class=" m-r-xs-30" src="{{ asset('images/media/small-media-3.jpg') }}"
+													class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-3.jpg') }}"
 													alt="media image"></a>
 											<div class="media-body">
 												<a href="post-format-standard.html"
@@ -308,7 +308,7 @@
 										<!-- End of .post-block -->
 										<div class="media post-block post-block__small">
 											<a href="post-format-standard.html" class="align-self-center"><img
-													class=" m-r-xs-30" src="{{ asset('images/media/small-media-2.jpg') }}"
+													class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-2.jpg') }}"
 													alt="media image"></a>
 											<div class="media-body">
 												<a href="#post-format-standard.html"
@@ -327,7 +327,7 @@
 										<!-- End of .post-block -->
 										<div class="media post-block post-block__small">
 											<a href="post-format-standard.html" class="align-self-center"><img
-													class=" m-r-xs-30" src="{{ asset('images/media/small-media-1.jpg') }}"
+													class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-1.jpg') }}"
 													alt="media image"></a>
 											<div class="media-body">
 												<a href="post-format-standard.html"
@@ -348,7 +348,7 @@
 										<!-- End of .post-block -->
 										<div class="media post-block post-block__small">
 											<a href="post-format-standard.html" class="align-self-center"><img
-													class=" m-r-xs-30" src="{{ asset('images/media/small-media-4.jpg') }}"
+													class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-4.jpg') }}"
 													alt="media image"></a>
 											<div class="media-body">
 												<a href="post-format-standard.html"
@@ -375,7 +375,7 @@
 									<div class="axil-content">
 										<div class="media post-block post-block__small">
 											<a href="post-format-standard.html" class="align-self-center"><img
-													class=" m-r-xs-30" src="{{ asset('images/media/small-media-2.jpg') }}"
+													class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-2.jpg') }}"
 													alt="media image"></a>
 											<div class="media-body">
 												<a href="post-format-standard.html"
@@ -396,7 +396,7 @@
 										<!-- End of .post-block -->
 										<div class="media post-block post-block__small">
 											<a href="post-format-standard.html" class="align-self-center"><img
-													class=" m-r-xs-30" src="{{ asset('images/media/small-media-1.jpg') }}"
+													class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-1.jpg') }}"
 													alt="media image"></a>
 											<div class="media-body">
 												<a href="post-format-standard.html"
@@ -415,7 +415,7 @@
 										<!-- End of .post-block -->
 										<div class="media post-block post-block__small">
 											<a href="post-format-standard.html" class="align-self-center"><img
-													class=" m-r-xs-30" src="{{ asset('images/media/small-media-3.jpg') }}"
+													class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-3.jpg') }}"
 													alt="media image"></a>
 											<div class="media-body">
 												<a href="post-format-standard.html"
@@ -437,7 +437,7 @@
 										<!-- End of .post-block -->
 										<div class="media post-block post-block__small">
 											<a href="post-format-standard.html" class="align-self-center"><img
-													class=" m-r-xs-30" src="{{ asset('images/media/small-media-4.jpg') }}"
+													class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-4.jpg') }}"
 													alt="media image"></a>
 											<div class="media-body">
 												<a href="post-format-standard.html"
@@ -486,7 +486,7 @@
 					<div class="col-lg-4">
 						<div class="axil-team-block m-b-xs-30">
 							<a href="{{ route('author') }}" class="d-block img-container">
-								<img src="{{ asset('images/team/team-1.jpg') }}" alt="team member 1">
+								<img src="{{ asset('styleWeb/images/team/team-1.jpg') }}" alt="team member 1">
 							</a>
 
 							<div class="axil-team-inner-content text-center">
@@ -516,7 +516,7 @@
 					<div class="col-lg-4">
 						<div class="axil-team-block m-b-xs-30">
 							<a href="{{ route('author') }}" class="d-block img-container">
-								<img src="{{ asset('images/team/team-2.jpg') }}" alt="team member 2">
+								<img src="{{ asset('styleWeb/images/team/team-2.jpg') }}" alt="team member 2">
 							</a>
 
 							<div class="axil-team-inner-content text-center">
@@ -546,7 +546,7 @@
 					<div class="col-lg-4">
 						<div class="axil-team-block m-b-xs-30">
 							<a href="{{ route('author') }}" class="d-block img-container">
-								<img src="{{ asset('images/team/team-3.jpg') }}" alt="team member 3">
+								<img src="{{ asset('styleWeb/images/team/team-3.jpg') }}" alt="team member 3">
 							</a>
 
 							<div class="axil-team-inner-content text-center">
@@ -576,7 +576,7 @@
 					<div class="col-lg-4">
 						<div class="axil-team-block m-b-xs-30">
 							<a href="{{ route('author') }}" class="d-block img-container">
-								<img src="{{ asset('images/team/team-4.jpg') }}" alt="team member 4">
+								<img src="{{ asset('styleWeb/images/team/team-4.jpg') }}" alt="team member 4">
 							</a>
 
 							<div class="axil-team-inner-content text-center">
@@ -606,7 +606,7 @@
 					<div class="col-lg-4">
 						<div class="axil-team-block m-b-xs-30">
 							<a href="{{ route('author') }}" class="d-block img-container">
-								<img src="{{ asset('images/team/team-5.jpg') }}" alt="team member 5">
+								<img src="{{ asset('styleWeb/images/team/team-5.jpg') }}" alt="team member 5">
 							</a>
 
 							<div class="axil-team-inner-content text-center">
@@ -636,7 +636,7 @@
 					<div class="col-lg-4">
 						<div class="axil-team-block m-b-xs-30">
 							<a href="{{ route('author') }}" class="d-block img-container">
-								<img src="{{ asset('images/team/team-6.jpg') }}" alt="team member 6">
+								<img src="{{ asset('styleWeb/images/team/team-6.jpg') }}" alt="team member 6">
 							</a>
 
 							<div class="axil-team-inner-content text-center">
