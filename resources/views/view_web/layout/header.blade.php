@@ -101,7 +101,7 @@
 			<div class="navbar-inner">
 				<div class="brand-logo-container">
 					<a href="{{ route('index') }}">
-						<img src="{{ asset('images/logo-black.svg') }}" alt="" class="brand-logo">
+						<img src="{{ asset('styleWeb/images/logo-black.svg') }}" alt="" class="brand-logo">
 					</a>
 				</div>
 				<!-- End of .brand-logo-container -->

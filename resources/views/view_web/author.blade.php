@@ -1,4 +1,4 @@
-@extends('master')
+@extends('view_web.master')
 @section('titlePage', 'Author')
 @section('content')
 	<div class="breadcrumb-wrapper">
@@ -23,7 +23,7 @@
 					<div class="author-details-block">
 						<div class="media post-block post-block__mid m-b-xs-0">
 							<a href="{{ route('post-format-standard')}}" class="align-self-center">
-								<img class="m-r-xs-30" src="{{ asset('images/author-img.jpg')}}" alt="author image">
+								<img class="m-r-xs-30" src="{{ asset('styleWeb/images/author-img.jpg')}}" alt="author image">
 								<div class="grad-overlay__transparent overlay-over"></div>
 							</a>
 							<div class="media-body">
@@ -64,5 +64,5 @@
 	@section('randomTop')
 		<h2 class="h3 m-b-xs-40">Articles By This Author</h2>
     @stop
-	@include('layout/randomPost')
+	@include('view_web.layout.randomPost')
 @stop

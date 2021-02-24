@@ -1,4 +1,4 @@
-@extends('master')
+@extends('view_web.master')
 @section('titlePage','Sporst')
 @section('content')
 	<div class="breadcrumb-wrapper">
@@ -34,8 +34,8 @@
 
 	@section('randomTop')
         <div class="add-container m-b-xs-60">
-            <a href="#"><img src="{{ asset('images/clientbanner/clientbanner.jpg') }}" alt="add one" class="img-fluid"></a>
+            <a href="#"><img src="{{ asset('styleWeb/images/clientbanner/clientbanner.jpg') }}" alt="add one" class="img-fluid"></a>
         </div>
     @stop
-	@include('layout/randomPost')
+	@include('view_web.layout.randomPost')
 @stop

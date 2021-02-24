@@ -1,4 +1,4 @@
-@extends('master')
+@extends('view_web.master')
 @section('titlePage', 'Post-Format-Video')
 @section('content')
 		<div class="breadcrumb-wrapper">
@@ -57,7 +57,7 @@
 							<div class="post-metas banner-post-metas m-t-xs-20">
 								<ul class="list-inline">
 									<li><a href="#" class="post-author post-author-with-img"><img
-												src="{{ asset('images/author/01.png') }}" alt="author">Ashley Graham</a></li>
+												src="{{ asset('styleWeb.images/author/01.png') }}" alt="author">Ashley Graham</a></li>
 									<li><a href="#"><i class="feather icon-activity"></i>5k Views</a></li>
 									<li><a href="#"><i class="feather icon-share-2"></i>230 Shares</a></li>
 								</ul>
@@ -96,7 +96,7 @@
 
 									<figure class="post-media">
 										<video class="plyr-post"
-											poster="{{ asset('images/video-post/post-format-video-1.html') }}"
+											poster="{{ asset('styleWeb/images/video-post/post-format-video-1.html') }}"
 											id="video-player-1" playsinline controls>
 											<source src="{{ asset('videos/post-format-video-1.mp4') }}" type="video/mp4">
 										</video>
@@ -110,7 +110,7 @@
 										with ours. Cruising on a bike to help heal our injuries is the most mom thing
 										one can do.</p>
 									<div class="add-container m-b-xs-60">
-										<a href="#"><img src="{{ asset('images/clientbanner/clientbanner.jpg') }}" alt="add one"
+										<a href="#"><img src="{{ asset('styleWeb/images/clientbanner/clientbanner.jpg') }}" alt="add one"
 												class="img-fluid"></a>
 									</div>
 									<blockquote>
@@ -143,14 +143,14 @@
 									<ul class="row gallery text-center">
 										<li class="col-lg-6">
 											<figure>
-												<img src="{{ asset('images/post-single-gallery/post-single-gallery-6.jpg') }}"
+												<img src="{{ asset('styleWeb/images/post-single-gallery/post-single-gallery-6.jpg') }}"
 													alt="img">
 												<figcaption>Drawn for an insurance company</figcaption>
 											</figure>
 										</li>
 										<li class="col-lg-6">
 											<figure>
-												<img src="{{ asset('images/post-single-gallery/post-single-gallery-7.jpg') }}"
+												<img src="{{ asset('styleWeb/images/post-single-gallery/post-single-gallery-7.jpg') }}"
 													alt="img">
 												<figcaption>Drawn for an insurance company</figcaption>
 											</figure>
@@ -181,7 +181,7 @@
 										far I’ve come, and so thankful for where I come from.</p>
 
 									<figure>
-										<img src="{{ asset('images/post-single-gallery/post-single-img-1.jpg') }}" alt="img">
+										<img src="{{ asset('styleWeb/images/post-single-gallery/post-single-img-1.jpg') }}" alt="img">
 										<figcaption>Drawn for an insurance company</figcaption>
 									</figure>
 
@@ -200,25 +200,25 @@
 									<ul class="masonry-grid gallery">
 										<li class="grid-item col-lg-4">
 											<figure>
-												<img src="{{ asset('images/single-masonry-gallery/gallery-1.png') }}" alt=""
+												<img src="{{ asset('styleWeb/images/single-masonry-gallery/gallery-1.png') }}" alt=""
 													class="img-fluid w-100">
 											</figure>
 										</li>
 										<li class="grid-item col-lg-4">
 											<figure>
-												<img src="{{ asset('images/single-masonry-gallery/gallery-2.png') }}" alt=""
+												<img src="{{ asset('styleWeb/images/single-masonry-gallery/gallery-2.png') }}" alt=""
 													class="img-fluid w-100">
 											</figure>
 										</li>
 										<li class="grid-item col-lg-4">
 											<figure>
-												<img src="{{ asset('images/single-masonry-gallery/gallery-3.png') }}" alt=""
+												<img src="{{ asset('styleWeb/images/single-masonry-gallery/gallery-3.png') }}" alt=""
 													class="img-fluid w-100">
 											</figure>
 										</li>
 										<li class="grid-item col-lg-4">
 											<figure>
-												<img src="{{ asset('images/single-masonry-gallery/gallery-4.png') }}" alt=""
+												<img src="{{ asset('styleWeb/images/single-masonry-gallery/gallery-4.png') }}" alt=""
 													class="img-fluid w-100">
 											</figure>
 										</li>
@@ -414,7 +414,7 @@
 
 									<blockquote class="blockquote blockquote__with-image m-t-xs-0 m-b-xs-30">
 										<figure>
-											<img src="{{ asset('images/post-single-gallery/post-single-gallery-1.jpg') }}"
+											<img src="{{ asset('styleWeb/images/post-single-gallery/post-single-gallery-1.jpg') }}"
 												alt="image">
 										</figure>
 										<p>
@@ -455,7 +455,7 @@
 
 							<div class="about-author m-b-xs-60">
 								<div class="media">
-									<a href="#"><img class="author-img" src="{{ asset('images/author/author-1.png') }}"
+									<a href="#"><img class="author-img" src="{{ asset('styleWeb/images/author/author-1.png') }}"
 											alt=""></a>
 									<div class="media-body">
 										<div class="media-body-title">
@@ -554,7 +554,7 @@
 					<div class="col-lg-4">
 						<aside class="post-sidebar">
 							<div class="add-block-widget m-b-xs-40">
-								<a href="#"><img src="{{ asset('images/clientbanner/clientbanner2.jpg') }}" alt="sidebar add"
+								<a href="#"><img src="{{ asset('styleWeb/images/clientbanner/clientbanner2.jpg') }}" alt="sidebar add"
 										class="img-fluid"></a>
 							</div>
 							<div class="newsletter-widget weekly-newsletter bg-grey-light-three m-b-xs-40">
@@ -605,7 +605,7 @@
 											<ul class="category-list-wrapper">
 												<li class="category-list perfect-square">
 													<a href="#" class="list-inner"
-														style="background-image: url({{ asset('images/category-bg/category-bg-1.png') }})">
+														style="background-image: url({{ asset('styleWeb/images/category-bg/category-bg-1.png') }})">
 														<div class="post-info-wrapper overlay">
 															<div class="counter-inner"><span class="counter">20</span>+
 															</div>
@@ -618,7 +618,7 @@
 
 												<li class="category-list perfect-square">
 													<a href="#" class="list-inner"
-														style="background-image: url({{ asset('images/category-bg/category-bg-2.png') }})">
+														style="background-image: url({{ asset('styleWeb/images/category-bg/category-bg-2.png') }})">
 														<div class="post-info-wrapper overlay">
 															<div class="counter-inner"><span class="counter">100</span>+
 															</div>
@@ -631,7 +631,7 @@
 
 												<li class="category-list perfect-square">
 													<a href="#" class="list-inner"
-														style="background-image: url({{ asset('images/category-bg/category-bg-3.png') }})">
+														style="background-image: url({{ asset('styleWeb/images/category-bg/category-bg-3.png') }})">
 														<div class="post-info-wrapper overlay">
 															<div class="counter-inner"><span class="counter">10</span>+
 															</div>
@@ -644,7 +644,7 @@
 
 												<li class="category-list perfect-square">
 													<a href="#" class="list-inner"
-														style="background-image: url({{ asset('images/category-bg/category-bg-4.png') }})">
+														style="background-image: url({{ asset('styleWeb/images/category-bg/category-bg-4.png') }})">
 														<div class="post-info-wrapper overlay">
 															<div class="counter-inner"><span class="counter">10</span>+
 															</div>
@@ -663,7 +663,7 @@
 											<ul class="category-list-wrapper">
 												<li class="category-list perfect-square">
 													<a href="#" class="list-inner"
-														style="background-image: url({{ asset('images/category-bg/category-bg-5.jpg') }})">
+														style="background-image: url({{ asset('styleWeb/images/category-bg/category-bg-5.jpg') }})">
 														<div class="post-info-wrapper overlay">
 															<div class="counter-inner"><span class="counter">20</span>+
 															</div>
@@ -676,7 +676,7 @@
 
 												<li class="category-list perfect-square">
 													<a href="#" class="list-inner"
-														style="background-image: url({{ asset('images/category-bg/category-bg-6.jpg') }})">
+														style="background-image: url({{ asset('styleWeb/images/category-bg/category-bg-6.jpg') }})">
 														<div class="post-info-wrapper overlay">
 															<div class="counter-inner"><span class="counter">100</span>+
 															</div>
@@ -689,7 +689,7 @@
 
 												<li class="category-list perfect-square">
 													<a href="#" class="list-inner"
-														style="background-image: url({{ asset('images/category-bg/category-bg-7.jpg') }})">
+														style="background-image: url({{ asset('styleWeb/images/category-bg/category-bg-7.jpg') }})">
 														<div class="post-info-wrapper overlay">
 															<div class="counter-inner"><span class="counter">10</span>+
 															</div>
@@ -702,7 +702,7 @@
 
 												<li class="category-list perfect-square">
 													<a href="#" class="list-inner"
-														style="background-image: url({{ asset('images/category-bg/category-bg-8.jpg') }})">
+														style="background-image: url({{ asset('styleWeb/images/category-bg/category-bg-8.jpg') }})">
 														<div class="post-info-wrapper overlay">
 															<div class="counter-inner"><span class="counter">10</span>+
 															</div>
@@ -818,7 +818,7 @@
 										<div class="axil-content">
 											<div class="media post-block post-block__small">
 												<a href="{{ route('post-format-standard')}}" class="align-self-center"><img
-														class=" m-r-xs-30" src="{{ asset('images/media/small-media-1.jpg') }}"
+														class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-1.jpg') }}"
 														alt="media image"></a>
 												<div class="media-body">
 													<div class="post-cat-group">
@@ -843,7 +843,7 @@
 											<!-- End of .post-block -->
 											<div class="media post-block post-block__small">
 												<a href="{{ route('post-format-standard')}}" class="align-self-center"><img
-														class=" m-r-xs-30" src="{{ asset('images/media/small-media-2.jpg') }}"
+														class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-2.jpg') }}"
 														alt="media image"></a>
 												<div class="media-body">
 													<a href="{{ route('post-format-standard')}}"
@@ -864,7 +864,7 @@
 											<!-- End of .post-block -->
 											<div class="media post-block post-block__small">
 												<a href="{{ route('post-format-standard')}}" class="align-self-center"><img
-														class=" m-r-xs-30" src="{{ asset('images/media/small-media-3.jpg') }}"
+														class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-3.jpg') }}"
 														alt="media image"></a>
 												<div class="media-body">
 													<a href="{{ route('post-format-standard')}}"
@@ -882,7 +882,7 @@
 											<!-- End of .post-block -->
 											<div class="media post-block post-block__small">
 												<a href="{{ route('post-format-standard')}}" class="align-self-center"><img
-														class=" m-r-xs-30" src="{{ asset('images/media/small-media-4.jpg') }}"
+														class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-4.jpg') }}"
 														alt="media image"></a>
 												<div class="media-body">
 													<a href="{{ route('post-format-standard')}}"
@@ -907,7 +907,7 @@
 										<div class="axil-content">
 											<div class="media post-block post-block__small">
 												<a href="{{ route('post-format-standard')}}" class="align-self-center"><img
-														class=" m-r-xs-30" src="{{ asset('images/media/small-media-3.jpg') }}"
+														class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-3.jpg') }}"
 														alt="media image"></a>
 												<div class="media-body">
 													<a href="{{ route('post-format-standard')}}"
@@ -926,7 +926,7 @@
 											<!-- End of .post-block -->
 											<div class="media post-block post-block__small">
 												<a href="{{ route('post-format-standard')}}" class="align-self-center"><img
-														class=" m-r-xs-30" src="{{ asset('images/media/small-media-2.jpg') }}"
+														class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-2.jpg') }}"
 														alt="media image"></a>
 												<div class="media-body">
 													<a href="#{{ route('post-format-standard')}}"
@@ -945,7 +945,7 @@
 											<!-- End of .post-block -->
 											<div class="media post-block post-block__small">
 												<a href="{{ route('post-format-standard')}}" class="align-self-center"><img
-														class=" m-r-xs-30" src="{{ asset('images/media/small-media-1.jpg') }}"
+														class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-1.jpg') }}"
 														alt="media image"></a>
 												<div class="media-body">
 													<a href="{{ route('post-format-standard')}}"
@@ -966,7 +966,7 @@
 											<!-- End of .post-block -->
 											<div class="media post-block post-block__small">
 												<a href="{{ route('post-format-standard')}}" class="align-self-center"><img
-														class=" m-r-xs-30" src="{{ asset('images/media/small-media-4.jpg') }}"
+														class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-4.jpg') }}"
 														alt="media image"></a>
 												<div class="media-body">
 													<a href="{{ route('post-format-standard')}}"
@@ -993,7 +993,7 @@
 										<div class="axil-content">
 											<div class="media post-block post-block__small">
 												<a href="{{ route('post-format-standard')}}" class="align-self-center"><img
-														class=" m-r-xs-30" src="{{ asset('images/media/small-media-2.jpg') }}"
+														class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-2.jpg') }}"
 														alt="media image"></a>
 												<div class="media-body">
 													<a href="{{ route('post-format-standard')}}"
@@ -1014,7 +1014,7 @@
 											<!-- End of .post-block -->
 											<div class="media post-block post-block__small">
 												<a href="{{ route('post-format-standard')}}" class="align-self-center"><img
-														class=" m-r-xs-30" src="{{ asset('images/media/small-media-1.jpg') }}"
+														class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-1.jpg') }}"
 														alt="media image"></a>
 												<div class="media-body">
 													<a href="{{ route('post-format-standard')}}"
@@ -1033,7 +1033,7 @@
 											<!-- End of .post-block -->
 											<div class="media post-block post-block__small">
 												<a href="{{ route('post-format-standard')}}" class="align-self-center"><img
-														class=" m-r-xs-30" src="{{ asset('images/media/small-media-3.jpg') }}"
+														class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-3.jpg') }}"
 														alt="media image"></a>
 												<div class="media-body">
 													<a href="{{ route('post-format-standard')}}"
@@ -1055,7 +1055,7 @@
 											<!-- End of .post-block -->
 											<div class="media post-block post-block__small">
 												<a href="{{ route('post-format-standard')}}" class="align-self-center"><img
-														class=" m-r-xs-30" src="{{ asset('images/media/small-media-4.jpg') }}"
+														class=" m-r-xs-30" src="{{ asset('styleWeb/images/media/small-media-4.jpg') }}"
 														alt="media image"></a>
 												<div class="media-body">
 													<a href="{{ route('post-format-standard')}}"
@@ -1108,7 +1108,7 @@
 									<ul class="instagram-post-list-wrapper">
 										<li class="instagram-post-list perfect-square">
 											<a href="#" class="list-inner"
-												style="background-image: url({{ asset('images/instagram-post/instagram-post-1.jpg') }})">
+												style="background-image: url({{ asset('styleWeb/images/instagram-post/instagram-post-1.jpg') }})">
 												<div class="post-info-wrapper overlay">
 													<div class="post-info">
 														<i class="feather icon-heart"></i>
@@ -1129,7 +1129,7 @@
 
 										<li class="instagram-post-list perfect-square">
 											<a href="#" class="list-inner"
-												style="background-image: url({{ asset('images/instagram-post/instagram-post-2.jpg') }})">
+												style="background-image: url({{ asset('styleWeb/images/instagram-post/instagram-post-2.jpg') }})">
 												<div class="post-info-wrapper overlay">
 													<div class="post-info">
 														<i class="feather icon-heart"></i>
@@ -1150,7 +1150,7 @@
 
 										<li class="instagram-post-list perfect-square">
 											<a href="#" class="list-inner"
-												style="background-image: url({{ asset('images/instagram-post/instagram-post-3.jpg') }})">
+												style="background-image: url({{ asset('styleWeb/images/instagram-post/instagram-post-3.jpg') }})">
 												<div class="post-info-wrapper overlay">
 													<div class="post-info">
 														<i class="feather icon-heart"></i>
@@ -1171,7 +1171,7 @@
 
 										<li class="instagram-post-list perfect-square">
 											<a href="#" class="list-inner"
-												style="background-image: url({{ asset('images/instagram-post/instagram-post-4.jpg') }})">
+												style="background-image: url({{ asset('styleWeb/images/instagram-post/instagram-post-4.jpg') }})">
 												<div class="post-info-wrapper overlay">
 													<div class="post-info">
 														<i class="feather icon-heart"></i>
@@ -1192,7 +1192,7 @@
 
 										<li class="instagram-post-list perfect-square">
 											<a href="#" class="list-inner"
-												style="background-image: url({{ asset('images/instagram-post/instagram-post-5.jpg') }})">
+												style="background-image: url({{ asset('styleWeb/images/instagram-post/instagram-post-5.jpg') }})">
 												<div class="post-info-wrapper overlay">
 													<div class="post-info">
 														<i class="feather icon-heart"></i>
@@ -1213,7 +1213,7 @@
 
 										<li class="instagram-post-list perfect-square">
 											<a href="#" class="list-inner"
-												style="background-image: url({{ asset('images/instagram-post/instagram-post-6.jpg') }})">
+												style="background-image: url({{ asset('styleWeb/images/instagram-post/instagram-post-6.jpg') }})">
 												<div class="post-info-wrapper overlay">
 													<div class="post-info">
 														<i class="feather icon-heart"></i>
@@ -1243,7 +1243,7 @@
 							<!-- End of .instagram-widget -->
 
 							<div class="add-block-widget m-b-xs-40">
-								<a href="#"><img src="{{ asset('images/sidebar-add.jpg') }}" alt="sidebar add"
+								<a href="#"><img src="{{ asset('styleWeb/images/sidebar-add.jpg') }}" alt="sidebar add"
 										class="img-fluid"></a>
 							</div>
 							<!-- End of .add-block-widget -->
@@ -1271,7 +1271,7 @@
 						<div class="col-lg-3 col-md-4">
 							<div class="content-block m-b-xs-30">
 								<a href="{{ route('post-format-standard')}}">
-									<img src="{{ asset('images/related-post/related-post-1.jpg') }}" alt="abstruct image"
+									<img src="{{ asset('styleWeb/images/related-post/related-post-1.jpg') }}" alt="abstruct image"
 										class="img-fluid">
 									<div class="grad-overlay"></div>
 								</a>
@@ -1293,7 +1293,7 @@
 						<div class="col-lg-3 col-md-4">
 							<div class="content-block m-b-xs-30">
 								<a href="{{ route('post-format-standard')}}">
-									<img src="{{ asset('images/related-post/related-post-2.jpg') }}" alt="abstruct image"
+									<img src="{{ asset('styleWeb/images/related-post/related-post-2.jpg') }}" alt="abstruct image"
 										class="img-fluid">
 									<div class="grad-overlay"></div>
 								</a>
@@ -1317,7 +1317,7 @@
 						<div class="col-lg-3 col-md-4">
 							<div class="content-block m-b-xs-30">
 								<a href="{{ route('post-format-standard')}}">
-									<img src="{{ asset('images/related-post/related-post-3.jpg') }}" alt="abstruct image"
+									<img src="{{ asset('styleWeb/images/related-post/related-post-3.jpg') }}" alt="abstruct image"
 										class="img-fluid">
 									<div class="grad-overlay"></div>
 								</a>
@@ -1339,7 +1339,7 @@
 						<div class="col-lg-3 col-md-4">
 							<div class="content-block m-b-xs-30">
 								<a href="{{ route('post-format-standard')}}">
-									<img src="{{ asset('images/related-post/related-post-4.jpg') }}" alt="abstruct image"
+									<img src="{{ asset('styleWeb/images/related-post/related-post-4.jpg') }}" alt="abstruct image"
 										class="img-fluid">
 									<div class="grad-overlay"></div>
 								</a>
