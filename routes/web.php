@@ -17,15 +17,15 @@ Route::get('/', function () {
     return view('index');
 });
 Route::get("",'sectionController@getIndex')->name('index');
-Route::get("contact",'sectionController@getContact')->name('contact');
-Route::get("about-us",'sectionController@getAboutUs')->name('about-us');
+Route::get("lien-he",'sectionController@getContact')->name('contact');
+Route::get("ve-chung-toi",'sectionController@getAboutUs')->name('about-us');
 Route::get("post-layout",'sectionController@getPostLayout')->name('post-layout');
 Route::get("post-format",'sectionController@getPostFormat')->name('post-format');
-Route::get("author", 'sectionController@getAuthor')->name('author');
-Route::get("business",'sectionController@getBusiness')->name('business');
-Route::get("life-style", 'sectionController@getLifeStyle')->name('life-style');
-Route::get("technology",'sectionController@getTechnology')->name('technology');
-Route::get("sports",'sectionController@getSports')->name('sports');
+Route::get("tac-gia", 'sectionController@getAuthor')->name('author');
+Route::get("kinh-doanh",'sectionController@getBusiness')->name('business');
+Route::get("phong-cach-song", 'sectionController@getLifeStyle')->name('life-style');
+Route::get("cong-nghe",'sectionController@getTechnology')->name('technology');
+Route::get("the-thao",'sectionController@getSports')->name('sports');
 Route::get("team",'sectionController@getTeam')->name('team');
 Route::get("error-404",'sectionController@getError')->name('error-404');
 Route::get("under-construction",'sectionController@getConstruction')->name('under-construction');
@@ -35,7 +35,8 @@ Route::get("post-format-video",'sectionController@getPostFormatVideo')->name('po
 // 
 // ADMIN
 // ADMIN
-Route::get('login', 'adminColtroller@login')->name('login');
+Route::get('login', 'adminColtroller@getLogin')->name('login');
+Route::post('postLogin', 'adminColtroller@postLogin')->name('postLogin');
 Route::get('admin','adminColtroller@getAdmin')->name('admin');
 Route::prefix('admin')->group(function(){
 	Route::prefix('category')->group(function(){
@@ -66,7 +67,7 @@ Route::prefix('admin')->group(function(){
 	});
 	Route::prefix('author')->group(function(){
 		Route::get('author-add', "adminColtroller@getAuthorAdd")->name('author-add');
-		Route::post('author-add', "adminColtroller@postAuthorAdd")->name('author-add');
+		Route::post('author-add', "adminColtroller@postAuthorAdd")->name('post-author-add');
 		Route::get('author-edit', "adminColtroller@getAuthorEdit")->name('author-edit');
 		Route::get('author-list', "adminColtroller@getAuthorList")->name('author-list');
 	});

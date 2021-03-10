@@ -13,7 +13,7 @@
                 <th>Username</th>
                 <th>Email</th>
                 <th>Phone</th>
-                <th>Info-more</th>>
+                <th>Level</th>>
                 <th>Hành Động</th>
             </tr>
         </thead>
@@ -25,7 +25,11 @@
                     <td>{{ $au ->name }}</td>
                     <td>{{ $au ->email }}</td>
                     <td>{{ $au ->phone }}</td>
-                    <td>{{ $au ->info_more }}</td>
+                    <td>
+                        {{ $au -> level == 1 ? "Quản trị viên" : "" }}
+                        {{ $au -> level == 2 ? "Quản lý bài viết" : ""}}
+                        {{ $au -> level == 3 ? "Quản lý đăng bài" : ""}}
+                    </td>
                     <td class="center">
                         <div>
                             <span><i class="fad fa-trash-alt fa-fw"></i><a href="#"> Delete</a></span>
