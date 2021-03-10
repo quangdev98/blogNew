@@ -28,18 +28,26 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
+                @if (session('thongbao'))
+                    <div class="alert alert-success">
+                        {{ session('thongbao') }}
+                    </div>
+                @endif
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
                         <h3 class="text-info">Đăng nhập hệ thống</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form" action="" method="POST">
+                        <form role="form" action="{{ route('postLogin')}}" method="POST">
+                            @csrf
                             <fieldset>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Tài khoản" name="email" type="email" autofocus>
+                                    {!! $errors->has('email') ? '<p class="alert alert-danger pv-5">'.$errors->first('email').'</p>' : ''!!}
                                 </div>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Mật khẩu" name="password" type="password" value="">
+                                    {!! $errors->has('password') ? '<p class="alert alert-danger pv-5">'.$errors->first('password').'</p>' : ''!!}
                                 </div>
                                 <button type="submit" class="btn btn-lg btn-success btn-block">Đăng nhập</button>
                             </fieldset>

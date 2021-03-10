@@ -6,7 +6,7 @@
         </h1>
     </div>
     <div class="col-lg-7" style="padding-bottom:120px">
-        <form action="" method="POST">
+        <form action="{{ route('post-author-add')}}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label>Username</label>
@@ -20,6 +20,14 @@
                 <label>Phone</label>
                 <input type="number" class="form-control" name="phone" placeholder="Please Enter Phone" />
             </div>
+            <div class="form-group">
+                <label>Phân quyền</label>
+                <select name="level">
+                    <option value="2">Quản lý bài viết</option>
+                    <option value="3">Quản lý đăng bài</option>
+                </select>
+            </div>
+            
             <div class="form-group">
                 <label>Info more</label>
                 <textarea name="info_more" class="form-control" rows="5"></textarea>

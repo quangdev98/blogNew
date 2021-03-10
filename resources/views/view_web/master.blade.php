@@ -46,7 +46,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('styleWeb/css/fontawesome-all.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('styleWeb/css/iconfont.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('styleWeb/css/vendor/bootstrap.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('styleWeb/css/vendor/owl.carousel.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('styleWeb/css/vendor/owl.carousel.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('styleWeb/css/vendor/magnific-popup.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('styleWeb/css/vendor/animate.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('styleWeb/css/style.css') }}">

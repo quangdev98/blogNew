@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Controllers\Controller;
+use Auth;
 use Illuminate\Http\Request;
 use App\Models\Theloai; 
 use App\Models\Users; 
@@ -11,10 +12,37 @@ class adminColtroller extends Controller
     public function getAdmin(){
     	return view('admin.admin');
     }
-    public function login(){
+    public function getLogin(){
+        if(Auth::check()){
+            return redirect()->route('admin');
+        }
     	return view('admin.login');
     }
-    
+    public function postLogin(Request $request){
+        $this->validate($request,
+            [
+                'email'=>'required',
+                'password'=>'required|min:6|max:16'
+            ], [
+                'email.required'=>'Bạn chưa nhập Email',
+                'password.required'=>'Bạn chưa nhập password',
+                'password.min'=>'Mật khẩu không nhỏ quá 6 ký tự',
+                'password.max'=>'Mật khẩu không lớn hơn 16 ký tự',
+            ]);
+        $arr = [
+            'email'=>$request->email,
+            'password'=>$request->password
+        ];
+        if (Auth::attempt($arr)) {
+            // đăng nhập đúng
+            return redirect()->route('admin');
+        }
+        else {
+            //đăng nhập sai
+            return redirect()->route('login')->with('thongbao', 'Tài khoản hoặc mật khẩu không chính xác !');
+        }
+
+    }
     // 
     public function getCateAdd(){
     	return view('admin/category/cate_add');
@@ -99,17 +127,40 @@ class adminColtroller extends Controller
     	return view('admin/user/user_edit');
     }
     public function getAuthorAdd(){
-        return view('admin/author/author_add');
+        return view('admin.author.author_add');
     }
     public function postAuthorAdd(Request $request){
+        $this->validate($request,
+        [
+            'name' => 'required|unique:Users,name|min:2|max:100',
+            'phone' => 'required|unique:Users,phone|min:10|max:15',
+            'email' => 'required|unique:Users,email',
+            'avatar' => 'image|mimes:jpeg,png,jpg,gif|max:10240',
+        ],
+        [
+            'name.required' =>'Bạn chưa nhập tên thể loại',
+            'name.unique' => 'Tên thể loại đã tồn tại',
+            'name.min' =>'Tên thể loại phải có độ dài từ 3 đến 100 ký tự',
+            'phone.required' =>'Bạn chưa nhập số điện thoại',
+            'phone.unique' => 'Số điện thoại đã tồn tại',
+            'phone.min' =>'Tên thể loại phải có độ dài từ 10 đến 100 ký tự'
+            
+            // 'name.required' =>'Bạn chưa nhập tên thể loại',
+            // 'name.unique' => 'Tên thể loại đã tồn tại',
+            // 'name.min' =>'Tên thể loại phải có độ dài từ 3 đến 100 ký tự',
+            
+        ]);
+        $avatar_ = 'IMAGE-AUTHOR-'.time().$request->file('avatar')->getClientoriginalName();
         $author = new Author;
+        $author->avatar = $avatar_;
         $author->name = $request->name;
-        $author->tenkhongdau = $request->name;
         $author->email = $request->email;
         $author->phone = $request->phone;
+        $author->level = $request->level;
         $author->info_more = $request->info_more;
-        $author->avatar = $request->avatar;
+        $request->file('avatar')->move('uploads/avatars/',$avatar_);
         $author->save();
+        $author->update(['tenkhongdau'=>create_slug($author->name,$author->id)]);
         return redirect()->route('author-list')->with('Thêm tác giả thành công!');
     }
     public function getAuthorEdit(){
