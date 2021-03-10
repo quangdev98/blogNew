@@ -218,7 +218,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2"
+                ""laravel/framework": "7.30.4"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^6.0",
@@ -813,7 +813,7 @@
                 "symfony/error-handler": "^5.0",
                 "symfony/finder": "^5.0",
                 "symfony/http-foundation": "^5.0",
-                "symfony/http-kernel": "^5.0",
+                "symfony/http-kernel": "^5.1.5",
                 "symfony/mime": "^5.0",
                 "symfony/process": "^5.0",
                 "symfony/routing": "^5.0",
